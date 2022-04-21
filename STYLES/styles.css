@@ -51,7 +51,7 @@ body {
     width: 100%;
     margin-bottom: 16px;
     background-color: #cfcfcf;
-    transition: .3s ease-in-out;
+    transition: .10s ease-in-out;
 }
 
 .login__input-border::after {
@@ -62,6 +62,10 @@ body {
     margin-bottom: 16px;
     background: linear-gradient(120deg, #8f3dbef3, #27a0a7);
     transition: .3s ease-in-out;
+}
+
+.login__input:focus+.login__input-border::after {
+    width: 100%;
 }
 
 .login__submit {
@@ -75,7 +79,11 @@ body {
     font-weight: bold;
     border: unset;
     border-radius: 40px;
-    transition: .5 ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+.login__submit:hover {
+    background-position: right;
 }
 
 .login__reset {
